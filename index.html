@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finastra Conference 2025</title>
+    <meta name="description"
+        content="Join us for the premier financial technology conference of 2025, hosted by Finastra">
+    <meta name="author" content="Finastra">
+
+    <meta property="og:title" content="Finastra Conference 2025">
+    <meta property="og:description"
+        content="Join us for the premier financial technology conference of 2025, hosted by Finastra">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@finastrahq">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="#">Finastra<span>Conf</span></a>
+                </div>
+                <div class="desktop-menu">
+                    <a href="#overview">Overview</a>
+                    <a href="#reasons">Why Attend</a>
+
+                    <button class="btn btn-primary" onclick="scrollToSection('register')">Register Now</button>
+                </div>
+                <div class="mobile-menu-button">
+                    <button id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden">
+            <a href="#overview" onclick="toggleMobileMenu()">Overview</a>
+            <a href="#reasons" onclick="toggleMobileMenu()">Why Attend</a>
+            <a href="#speakers" onclick="toggleMobileMenu()">Speakers</a>
+            <a href="#agenda" onclick="toggleMobileMenu()">Agenda</a>
+            <a href="#about" onclick="toggleMobileMenu()">About</a>
+            <button class="btn btn-primary" onclick="scrollToSection('register'); toggleMobileMenu()">Register
+                Now</button>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <div class="decorative-element circle1"></div>
+            <div class="decorative-element circle2"></div>
+            <div class="decorative-element circle3"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h2 class="date">May 15-17, 2025</h2>
+                <h1 class="title">Finastra Innovation <br>
+                    <span class="text-gradient">Conference 2025</span>
+                </h1>
+                <p class="subtitle">Join the premier financial technology conference shaping the future of finance</p>
+
+                <div class="event-info slide-up">
+                    <div class="info-item">
+                        <i class="icon calendar"></i>
+                        <span>May 15-17, 2025</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-item">
+                        <i class="icon location"></i>
+                        <span>London Tech Center</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info-item">
+                        <i class="icon users"></i>
+                        <span>2,000+ Attendees</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Overview -->
+    <section id="overview" class="overview-section section">
+        <div class="container">
+            <h2 class="section-title">Event Overview</h2>
+            <p class="section-subtitle">
+                Reimagine Banking: Adapt. Evolve. Thrive. – Join us on April 9th in Cairo, Egypt, for Finastra's
+                Universal Banking Forum
+            </p>
+
+            <div class="overview-grid">
+                <!-- Left Column: Event Highlights -->
+                <div class="highlights-card">
+                    <h3>Why Attend?</h3>
+                    <ul>
+                        <li>
+                            <div class="icon-box zap"></div>
+                            <div>
+                                <h4>Learn from Industry Experts</h4>
+                                <p>Gain knowledge on generative AI, regulations, recession threats, and more.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box trending"></div>
+                            <div>
+                                <h4>Stay Ahead of Trends</h4>
+                                <p>Discover how to adapt to globalization, volatility, and shifting dynamics.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box globe"></div>
+                            <div>
+                                <h4>Connect with Leaders</h4>
+                                <p>Meet tech pioneers, banking executives, and peers from across the world.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box users"></div>
+                            <div>
+                                <h4>Enhance Your Career</h4>
+                                <p>Upgrade your skill set and expand your professional network.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-box share"></div>
+                            <div>
+                                <h4>Share Your Expertise</h4>
+                                <p>Engage in conversations, panels, and breakout sessions with industry peers.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Column -->
+                <div class="overview-right">
+                    <!-- Who Should Attend -->
+                    <div class="attendees-card">
+                        <h3>Who Should Attend?</h3>
+                        <div class="grid">
+                            <div class="attendee-type">Banking Executives</div>
+                            <div class="attendee-type">Fintech Innovators</div>
+                            <div class="attendee-type">Tech Leaders</div>
+                            <div class="attendee-type">Financial Analysts</div>
+                            <div class="attendee-type">Investors</div>
+                            <div class="attendee-type">Regulatory Experts</div>
+                        </div>
+                    </div>
+
+                    <!-- Key Themes -->
+                    <div class="themes-card">
+                        <h3>Key Themes</h3>
+                        <div class="progress-bars">
+                            <div class="progress-item">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                    <div class="progress-labels">
+                                        <span>Generative AI in Banking</span>
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                    <div class="progress-labels">
+                                        <span>Globalization & Volatility</span>
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                    <div class="progress-labels">
+                                        <span>Supply Chain & Recession Risks</span>
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                    <div class="progress-labels">
+                                        <span>Regulatory Evolution</span>
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="cta-card">
+                        <h3>Don’t Miss Out!</h3>
+                        <p>Secure your place now at the most essential banking forum of 2025.</p>
+                        <a href="#register" class="btn btn-primary">Register Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers -->
+    <section id="speakers" class="speakers-section">
+        <div class="container">
+            <h2 class="section-title">Our Speakers</h2>
+            <p class="section-subtitle">
+                Learn from the brightest minds and industry leaders shaping the future of financial technology
+            </p>
+
+            <div class="speakers-grid">
+                <!-- Speaker 1 -->
+                <div class="speaker-card">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=776&q=80"
+                            alt="Sarah Johnson" />
+                    </div>
+                    <div class="overlay">
+                        <h3>Sarah Johnson</h3>
+                        <p class="role">Chief Innovation Officer</p>
+                        <p class="company">Global Bank</p>
+                        <p class="bio">Pioneer in digital banking transformation with 15+ years of experience.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon linkedin">in</a>
+                            <a href="#" class="social-icon twitter">x</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="speaker-card">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=774&q=80"
+                            alt="Michael Chen" />
+                    </div>
+                    <div class="overlay">
+                        <h3>Michael Chen</h3>
+                        <p class="role">CEO</p>
+                        <p class="company">FinTech Innovations</p>
+                        <p class="bio">Serial entrepreneur with multiple successful fintech exits.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon linkedin">in</a>
+                            <a href="#" class="social-icon twitter">x</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="speaker-card">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=774&q=80"
+                            alt="Aisha Patel" />
+                    </div>
+                    <div class="overlay">
+                        <h3>Aisha Patel</h3>
+                        <p class="role">Head of Blockchain</p>
+                        <p class="company">Future Finance</p>
+                        <p class="bio">Award-winning researcher in distributed ledger technologies.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon linkedin">in</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 4 -->
+                <div class="speaker-card">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=774&q=80"
+                            alt="David Williams" />
+                    </div>
+                    <div class="overlay">
+                        <h3>David Williams</h3>
+                        <p class="role">Chief Technology Officer</p>
+                        <p class="company">Secure Payments Inc.</p>
+                        <p class="bio">Security expert specializing in fraud prevention and secure transaction systems.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon linkedin">in</a>
+                            <a href="#" class="social-icon twitter">x</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 5 -->
+                <div class="speaker-card">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=922&q=80"
+                            alt="Elena Rodriguez" />
+                    </div>
+                    <div class="overlay">
+                        <h3>Elena Rodriguez</h3>
+                        <p class="role">Director of AI Research</p>
+                        <p class="company">Data Finance</p>
+                        <p class="bio">Leading researcher in applying AI to financial services and risk assessment.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon linkedin">in</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 6 -->
+                <div class="speaker-card">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=1740&q=80"
+                            alt="James Wilson" />
+                    </div>
+                    <div class="overlay">
+                        <h3>James Wilson</h3>
+                        <p class="role">Regulatory Advisor</p>
+                        <p class="company">FinReg Solutions</p>
+                        <p class="bio">Former regulator helping businesses navigate complex financial regulations.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon twitter">x</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Agenda -->
+    <section id="agenda" class="agenda-section section">
+        <div class="container">
+            <h2 class="section-title">Event Agenda</h2>
+            <p class="section-subtitle">
+                A full day of insightful sessions, networking opportunities, and groundbreaking ideas.
+            </p>
+
+            <div class="agenda-tabs">
+                <div class="tabs">
+                    <!-- Only Day 1 tab visible -->
+                    <button class="tab-btn active" data-day="day1">
+                        <div>
+                            <span class="day">Day 1</span>
+                            <span class="date">May 15</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <!-- Day 1 Content (Visible) -->
+                <div class="day-schedule" id="day1-content">
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>09:00 - 10:00</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type general">Registration & Welcome Coffee</div>
+                            <h3>Registration & Welcome Coffee</h3>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Main Hall</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>10:00 - 10:30</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type keynote">Opening Remarks</div>
+                            <h3>Rudy Kawmi, Managing Director - Middle East, Africa & Asia-Pacific, Finastra Universal
+                                Banking</h3>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Main Stage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>10:30 - 11:00</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type keynote">Keynote</div>
+                            <h3>Digital Transformation in a Gen AI World</h3>
+                            <p>Ms. Siobhan Byron, Executive Vice President, Finastra Universal Banking</p>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Main Stage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>11:00 - 11:30</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type panel">Panel Discussion</div>
+                            <h3>Customer Acquisition - Gaining New Customers in a Hyper Competitive World</h3>
+                            <p>Hamid Nirouzad, Ahmad Hamdy, Ms. Riham Ismail Kassem Muhammad</p>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Main Stage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>11:30 - 12:00</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type panel">Customer Retention</div>
+                            <h3>Keeping Customers When Loyalty Is Dead</h3>
+                            <p>Karim El Mourabet, Heba Yehia, Ismail Ali, Mohamed Elazzazy</p>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Main Stage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>12:00 - 12:30</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type general">Coffee Break & Networking</div>
+                            <h3>Coffee Break & Networking</h3>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Networking Area</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>12:30 - 13:00</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type workshop">Cost to Serve: Deliver Customer Delight</div>
+                            <h3>Cost to Serve: Deliver Customer Delight</h3>
+                            <p>Narendra Mistry, Shehab Moustafa, Matthew Hughes, Emad Shawky Habib Hanna</p>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Breakout Session Room</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>13:00 - 13:30</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type general">Networking Lunch</div>
+                            <h3>Networking Lunch</h3>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Dining Area</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>13:30 - 14:00</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type general">Making the case for change</div>
+                            <h3>The Question is How</h3>
+                            <p>Marwan Abouzeid, Principal Solutions Consultant & Customer Value Lead</p>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Session Room</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item">
+                        <div class="time-slot">
+                            <span>14:00 - 14:30</span>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-type general">Closing Remarks</div>
+                            <h3>Rudy Kawmi, Managing Director - Middle East, Africa & Asia-Pacific</h3>
+                            <div class="event-location">
+                                <i class="icon location"></i>
+                                <span>Main Stage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-more-container">
+                        <button class="btn btn-outline view-more" data-day="day1">View Full Schedule</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-legend">
+                <h3>Schedule Legend</h3>
+                <div class="legend-grid">
+                    <div class="legend-item">
+                        <div class="color-dot keynote-dot"></div>
+                        <span>Keynote Sessions</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="color-dot panel-dot"></div>
+                        <span>Panel Discussions</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="color-dot workshop-dot"></div>
+                        <span>Workshops</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="color-dot general-dot"></div>
+                        <span>General Sessions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Finastra -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Finastra</h2>
+                    <p>
+                        Finastra is a global leader in financial services technology, delivering innovative solutions to
+                        banks, financial institutions, and fintech companies worldwide.
+                    </p>
+                    <p>
+                        With a focus on open finance, AI innovation, and collaborative ecosystems, we're driving the
+                        future of financial services. Our annual conference brings together the brightest minds in the
+                        industry to shape tomorrow's financial landscape.
+                    </p>
+
+                    <div class="stats-list">
+                        <div class="stat-item">
+                            <i class="icon check-circle"></i>
+                            <p>Serving 90 of the world's top 100 banks</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="icon check-circle"></i>
+                            <p>Operating in 130+ countries globally</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="icon check-circle"></i>
+                            <p>Powering 8,600+ financial institutions worldwide</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="icon check-circle"></i>
+                            <p>Processing 66 million transactions daily</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cards">
+                    <div class="about-card mission-card">
+                        <h3>Our Mission</h3>
+                        <p>
+                            To accelerate collaboration in financial services and create better experiences for people,
+                            businesses and communities.
+                        </p>
+                    </div>
+
+                    <div class="about-card focus-areas-card">
+                        <h3>Innovation Focus Areas</h3>
+                        <div class="focus-grid">
+                            <div class="focus-area">Open Banking</div>
+                            <div class="focus-area">AI & Machine Learning</div>
+                            <div class="focus-area">Blockchain</div>
+                            <div class="focus-area">Cloud Services</div>
+                        </div>
+                    </div>
+
+                    <div class="about-card history-card">
+                        <h3>Our Conference History</h3>
+                        <div class="history-stats">
+                            <div class="history-stat">
+                                <p class="stat-number">7</p>
+                                <p class="stat-desc">Annual<br>Conferences</p>
+                            </div>
+                            <div class="history-stat">
+                                <p class="stat-number">15k+</p>
+                                <p class="stat-desc">Past<br>Attendees</p>
+                            </div>
+                            <div class="history-stat">
+                                <p class="stat-number">300+</p>
+                                <p class="stat-desc">Industry<br>Speakers</p>
+                            </div>
+                            <div class="history-stat">
+                                <p class="stat-number">50+</p>
+                                <p class="stat-desc">Countries<br>Represented</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="register-section section">
+        <div class="container">
+            <h2 class="section-title">Register Now</h2>
+            <p class="section-subtitle">
+                Secure your spot at the premier financial technology conference of 2025
+            </p>
+
+            <div class="registration-container">
+                <div class="registration-form-container">
+                    <div class="form-card">
+                        <h3>Your Information</h3>
+
+                        <form id="registration-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName"
+                                        placeholder="Enter your first name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                    required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="company">Company/Organization</label>
+                                    <input type="text" id="company" name="company"
+                                        placeholder="Enter your company name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="jobTitle">Job Title</label>
+                                    <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter your job title">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="industry">Industry</label>
+                                    <select id="industry" name="industry">
+                                        <option value="" selected disabled>Select your industry</option>
+                                        <option value="banking">Banking</option>
+                                        <option value="fintech">Fintech</option>
+                                        <option value="consulting">Consulting</option>
+                                        <option value="insurance">Insurance</option>
+                                        <option value="investment">Investment</option>
+                                        <option value="technology">Technology</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country">
+                                        <option value="" selected disabled>Select your country</option>
+                                        <option value="us">United States</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="ca">Canada</option>
+                                        <option value="au">Australia</option>
+                                        <option value="de">Germany</option>
+                                        <option value="fr">France</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ticketType">Ticket Type *</label>
+                                <select id="ticketType" name="ticketType" required>
+                                    <option value="" selected disabled>Select your ticket type</option>
+                                    <option value="standard">Standard Pass - $799</option>
+                                    <option value="premium">Premium Pass - $1,299</option>
+                                    <option value="executive">Executive Pass - $1,999</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="marketingConsent" name="marketingConsent">
+                                <label for="marketingConsent">I agree to receive updates about this and future events
+                                    from Finastra. You can unsubscribe at any time.</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">Complete Registration</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="ticket-options">
+                    <h3>Ticket Options</h3>
+
+                    <div class="ticket-cards">
+                        <!-- Standard Pass -->
+                        <div class="ticket-card">
+                            <div class="ticket-header">
+                                <h4>Standard Pass</h4>
+                            </div>
+                            <div class="ticket-content">
+                                <p class="ticket-price">$799</p>
+                                <ul class="ticket-features">
+                                    <li>Full access to all conference sessions</li>
+                                    <li>Networking events</li>
+                                    <li>Lunch and refreshments</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Premium Pass -->
+                        <div class="ticket-card featured">
+                            <div class="ticket-header featured">
+                                <h4>Premium Pass</h4>
+                            </div>
+                            <div class="ticket-content">
+                                <p class="ticket-price">$1,299</p>
+                                <ul class="ticket-features">
+                                    <li>All Standard Pass features</li>
+                                    <li>VIP networking reception</li>
+                                    <li>Workshop access</li>
+                                    <li>1:1 meeting scheduler</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Executive Pass -->
+                        <div class="ticket-card">
+                            <div class="ticket-header">
+                                <h4>Executive Pass</h4>
+                            </div>
+                            <div class="ticket-content">
+                                <p class="ticket-price">$1,999</p>
+                                <ul class="ticket-features">
+                                    <li>All Premium Pass features</li>
+                                    <li>Executive roundtables</li>
+                                    <li>Private dining events</li>
+                                    <li>Speaker dinner access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group-discount">
+                        <p>Need to register multiple attendees? Contact us for group discounts at <a
+                                href="mailto:groups@finastraconf.com">groups@finastraconf.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registration-footer">
+                <h3>Join us for an unforgettable experience!</h3>
+                <p>Don't miss this opportunity to be part of the most influential financial technology conference of
+                    2025.</p>
+            </div>
+
+            <!-- Registration Success Message (Hidden by Default) -->
+            <div id="registration-success" class="registration-success hidden">
+                <div class="success-icon"></div>
+                <h2>Registration Complete!</h2>
+                <p>Thank you for registering for the Finastra Innovation Conference 2025. We've sent a confirmation
+                    email with all the details.</p>
+                <div class="event-reminder">
+                    <div class="reminder-item">
+                        <i class="icon calendar"></i>
+                        <span>May 15-17, 2025</span>
+                    </div>
+                    <div class="reminder-item">
+                        <i class="icon users"></i>
+                        <span>We're expecting you!</span>
+                    </div>
+                </div>
+                <p class="contact-note">
+                    If you have any questions or need to modify your registration, please contact us at <a
+                        href="mailto:conference@finastra.com">conference@finastra.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Awards Column -->
+                <div class="footer-column">
+                    <h3>Our Awards</h3>
+                    <div class="awards-list">
+                        <div class="award">
+                            <div class="award-icon">★</div>
+                            <div class="award-info">
+                                <p class="award-name">Best Financial Innovation</p>
+                                <p class="award-giver">Global Finance 2024</p>
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="award-icon">★</div>
+                            <div class="award-info">
+                                <p class="award-name">Top Fintech Provider</p>
+                                <p class="award-giver">Banking Technology 2023</p>
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="award-icon">★</div>
+                            <div class="award-info">
+                                <p class="award-name">Excellence in Open Banking</p>
+                                <p class="award-giver">Financial Times 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Offices Column -->
+                <div class="footer-column">
+                    <h3>Global Offices</h3>
+                    <ul class="offices-list">
+                        <li>
+                            <i class="icon location"></i>
+                            <div>
+                                <p class="office-name">London HQ</p>
+                                <p class="office-address">1 Kingdom Street, London</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon location"></i>
+                            <div>
+                                <p class="office-name">New York</p>
+                                <p class="office-address">909 Third Avenue, NYC</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon location"></i>
+                            <div>
+                                <p class="office-name">Singapore</p>
+                                <p class="office-address">80 Robinson Road</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon location"></i>
+                            <div>
+                                <p class="office-name">Dubai</p>
+                                <p class="office-address">Emirates Towers, Level 41</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#overview">Event Overview</a></li>
+                        <li><a href="#reasons">Why Attend</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="#about">About Finastra</a></li>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="icon mail"></i>
+                            <a href="mailto:conference@finastra.com">conference@finastra.com</a>
+                        </li>
+                        <li>
+                            <i class="icon phone"></i>
+                            <a href="tel:+442012345678">+44 20 1234 5678</a>
+                        </li>
+                    </ul>
+
+                    <h3 class="social-heading">Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon twitter-icon"></a>
+                        <a href="#" class="social-icon linkedin-icon"></a>
+                        <a href="#" class="social-icon facebook-icon"></a>
+                        <a href="#" class="social-icon instagram-icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <span>Finastra<span class="accent">Conf</span></span>
+                </div>
+                <div class="copyright">
+                    &copy; <span id="current-year"></span> Finastra. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
