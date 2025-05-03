@@ -33,11 +33,11 @@
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <a href="#">Finastra<span>Conf</span></a>
+                    <a href="#"><img src="img/cogent-logo-01.png" alt=""></a>
                 </div>
                 <div class="desktop-menu">
-                    <a href="#overview">Overview</a>
-                    <a href="#reasons">Why Attend</a>
+                    <a href="#agenda">Agenda</a>
+                    <a href="#speakers">Event Overview</a>
 
                     <button class="btn btn-primary" onclick="scrollToSection('register')">Register Now</button>
                 </div>
@@ -96,6 +96,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Event Overview -->
     <section id="overview" class="overview-section section">
@@ -336,198 +337,278 @@
     </section>
 
     <!-- Agenda -->
-    <section id="agenda" class="agenda-section section">
-        <div class="container">
-            <h2 class="section-title">Event Agenda</h2>
-            <p class="section-subtitle">
-                A full day of insightful sessions, networking opportunities, and groundbreaking ideas.
-            </p>
+    <section class="modern-agenda">
+        <div class="agenda-container">
+            <div class="agenda-header">
+                <h2 class="agenda-title">Event Agenda</h2>
+                <p class="agenda-subtitle">A full day of insightful sessions, networking opportunities, and
+                    groundbreaking ideas</p>
+            </div>
 
-            <div class="agenda-tabs">
-                <div class="tabs">
-                    <!-- Only Day 1 tab visible -->
-                    <button class="tab-btn active" data-day="day1">
-                        <div>
-                            <span class="day">Day 1</span>
-                            <span class="date">May 15</span>
+            <div class="timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">09:00 - 10:00</div>
+                        <div class="timeline-card card-general">
+                            <div class="card-header">
+                                <span class="event-badge general">General</span>
+                                <h3 class="event-title">Registration & Welcome Coffee</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Main Hall</span>
+                                </div>
+                            </div>
                         </div>
-                    </button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">10:00 - 10:30</div>
+                        <div class="timeline-card card-keynote">
+                            <div class="card-header">
+                                <span class="event-badge keynote">Keynote</span>
+                                <h3 class="event-title">Opening Remarks</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="event-speaker">Rudy Kawmi, Managing Director - Middle East, Africa &
+                                    Asia-Pacific, Finastra Universal Banking</p>
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Main Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">10:30 - 11:00</div>
+                        <div class="timeline-card card-keynote">
+                            <div class="card-header">
+                                <span class="event-badge keynote">Keynote</span>
+                                <h3 class="event-title">Digital Transformation in a Gen AI World</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="event-speaker">Ms. Siobhan Byron, Executive Vice President, Finastra Universal
+                                    Banking</p>
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Main Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">11:00 - 11:30</div>
+                        <div class="timeline-card card-panel">
+                            <div class="card-header">
+                                <span class="event-badge panel">Panel</span>
+                                <h3 class="event-title">Customer Acquisition - Gaining New Customers in a Hyper
+                                    Competitive World</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="event-speaker">Hamid Nirouzad, Ahmad Hamdy, Ms. Riham Ismail Kassem Muhammad
+                                </p>
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Main Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">11:30 - 12:00</div>
+                        <div class="timeline-card card-panel">
+                            <div class="card-header">
+                                <span class="event-badge panel">Panel</span>
+                                <h3 class="event-title">Keeping Customers When Loyalty Is Dead</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="event-speaker">Karim El Mourabet, Heba Yehia, Ismail Ali, Mohamed Elazzazy</p>
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Main Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">12:00 - 12:30</div>
+                        <div class="timeline-card card-general">
+                            <div class="card-header">
+                                <span class="event-badge general">General</span>
+                                <h3 class="event-title">Coffee Break & Networking</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Networking Area</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">12:30 - 13:00</div>
+                        <div class="timeline-card card-workshop">
+                            <div class="card-header">
+                                <span class="event-badge workshop">Workshop</span>
+                                <h3 class="event-title">Cost to Serve: Deliver Customer Delight</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="event-speaker">Narendra Mistry, Shehab Moustafa, Matthew Hughes, Emad Shawky
+                                    Habib Hanna</p>
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Breakout Session Room</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">13:00 - 13:30</div>
+                        <div class="timeline-card card-general">
+                            <div class="card-header">
+                                <span class="event-badge general">General</span>
+                                <h3 class="event-title">Networking Lunch</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Dining Area</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">13:30 - 14:00</div>
+                        <div class="timeline-card card-general">
+                            <div class="card-header">
+                                <span class="event-badge general">General</span>
+                                <h3 class="event-title">Making the case for change</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="event-speaker">Marwan Abouzeid, Principal Solutions Consultant & Customer
+                                    Value Lead</p>
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Session Room</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">14:00 - 14:30</div>
+                        <div class="timeline-card card-keynote">
+                            <div class="card-header">
+                                <span class="event-badge keynote">Keynote</span>
+                                <h3 class="event-title">Closing Remarks</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="event-speaker">Rudy Kawmi, Managing Director - Middle East, Africa &
+                                    Asia-Pacific</p>
+                                <div class="event-location">
+                                    <svg class="location-icon" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <span>Main Stage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="tab-content">
-                <!-- Day 1 Content (Visible) -->
-                <div class="day-schedule" id="day1-content">
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>09:00 - 10:00</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type general">Registration & Welcome Coffee</div>
-                            <h3>Registration & Welcome Coffee</h3>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Main Hall</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>10:00 - 10:30</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type keynote">Opening Remarks</div>
-                            <h3>Rudy Kawmi, Managing Director - Middle East, Africa & Asia-Pacific, Finastra Universal
-                                Banking</h3>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Main Stage</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>10:30 - 11:00</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type keynote">Keynote</div>
-                            <h3>Digital Transformation in a Gen AI World</h3>
-                            <p>Ms. Siobhan Byron, Executive Vice President, Finastra Universal Banking</p>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Main Stage</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>11:00 - 11:30</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type panel">Panel Discussion</div>
-                            <h3>Customer Acquisition - Gaining New Customers in a Hyper Competitive World</h3>
-                            <p>Hamid Nirouzad, Ahmad Hamdy, Ms. Riham Ismail Kassem Muhammad</p>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Main Stage</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>11:30 - 12:00</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type panel">Customer Retention</div>
-                            <h3>Keeping Customers When Loyalty Is Dead</h3>
-                            <p>Karim El Mourabet, Heba Yehia, Ismail Ali, Mohamed Elazzazy</p>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Main Stage</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>12:00 - 12:30</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type general">Coffee Break & Networking</div>
-                            <h3>Coffee Break & Networking</h3>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Networking Area</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>12:30 - 13:00</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type workshop">Cost to Serve: Deliver Customer Delight</div>
-                            <h3>Cost to Serve: Deliver Customer Delight</h3>
-                            <p>Narendra Mistry, Shehab Moustafa, Matthew Hughes, Emad Shawky Habib Hanna</p>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Breakout Session Room</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>13:00 - 13:30</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type general">Networking Lunch</div>
-                            <h3>Networking Lunch</h3>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Dining Area</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>13:30 - 14:00</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type general">Making the case for change</div>
-                            <h3>The Question is How</h3>
-                            <p>Marwan Abouzeid, Principal Solutions Consultant & Customer Value Lead</p>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Session Room</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="schedule-item">
-                        <div class="time-slot">
-                            <span>14:00 - 14:30</span>
-                        </div>
-                        <div class="event-details">
-                            <div class="event-type general">Closing Remarks</div>
-                            <h3>Rudy Kawmi, Managing Director - Middle East, Africa & Asia-Pacific</h3>
-                            <div class="event-location">
-                                <i class="icon location"></i>
-                                <span>Main Stage</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="view-more-container">
-                        <button class="btn btn-outline view-more" data-day="day1">View Full Schedule</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="schedule-legend">
-                <h3>Schedule Legend</h3>
-                <div class="legend-grid">
+            <div class="agenda-legend">
+                <h3 class="legend-title">Event Types</h3>
+                <div class="legend-items">
                     <div class="legend-item">
-                        <div class="color-dot keynote-dot"></div>
-                        <span>Keynote Sessions</span>
+                        <span class="legend-dot keynote"></span>
+                        <span class="legend-label">Keynote Sessions</span>
                     </div>
                     <div class="legend-item">
-                        <div class="color-dot panel-dot"></div>
-                        <span>Panel Discussions</span>
+                        <span class="legend-dot panel"></span>
+                        <span class="legend-label">Panel Discussions</span>
                     </div>
                     <div class="legend-item">
-                        <div class="color-dot workshop-dot"></div>
-                        <span>Workshops</span>
+                        <span class="legend-dot workshop"></span>
+                        <span class="legend-label">Workshops</span>
                     </div>
                     <div class="legend-item">
-                        <div class="color-dot general-dot"></div>
-                        <span>General Sessions</span>
+                        <span class="legend-dot general"></span>
+                        <span class="legend-label">General Sessions</span>
                     </div>
                 </div>
             </div>
@@ -745,28 +826,9 @@
                                 </ul>
                             </div>
                         </div>
-
-                        <!-- Executive Pass -->
-                        <div class="ticket-card">
-                            <div class="ticket-header">
-                                <h4>Executive Pass</h4>
-                            </div>
-                            <div class="ticket-content">
-                                <p class="ticket-price">$1,999</p>
-                                <ul class="ticket-features">
-                                    <li>All Premium Pass features</li>
-                                    <li>Executive roundtables</li>
-                                    <li>Private dining events</li>
-                                    <li>Speaker dinner access</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
 
-                    <div class="group-discount">
-                        <p>Need to register multiple attendees? Contact us for group discounts at <a
-                                href="mailto:groups@finastraconf.com">groups@finastraconf.com</a></p>
-                    </div>
+
                 </div>
             </div>
 
@@ -811,22 +873,22 @@
                         <div class="award">
                             <div class="award-icon">★</div>
                             <div class="award-info">
-                                <p class="award-name">Best Financial Innovation</p>
-                                <p class="award-giver">Global Finance 2024</p>
+                                <p class="award-name">Grate Place to Work</p>
+                                <p class="award-giver">GCC 2024</p>
                             </div>
                         </div>
                         <div class="award">
                             <div class="award-icon">★</div>
                             <div class="award-info">
-                                <p class="award-name">Top Fintech Provider</p>
-                                <p class="award-giver">Banking Technology 2023</p>
+                                <p class="award-name">Grate Place to Work</p>
+                                <p class="award-giver">GCC 2013</p>
                             </div>
                         </div>
                         <div class="award">
                             <div class="award-icon">★</div>
                             <div class="award-info">
-                                <p class="award-name">Excellence in Open Banking</p>
-                                <p class="award-giver">Financial Times 2023</p>
+                                <p class="award-name">Grate Place to Work</p>
+                                <p class="award-giver">UAE 2023</p>
                             </div>
                         </div>
                     </div>
@@ -839,29 +901,24 @@
                         <li>
                             <i class="icon location"></i>
                             <div>
-                                <p class="office-name">London HQ</p>
-                                <p class="office-address">1 Kingdom Street, London</p>
+                                <p class="office-name">Middle East & Africa HQ</p>
+                                <p class="office-address">Office No: 209, The Metropolis Tower
+                                    Business Bay, Dubai, United Arab Emirates</p>
                             </div>
                         </li>
                         <li>
                             <i class="icon location"></i>
                             <div>
-                                <p class="office-name">New York</p>
-                                <p class="office-address">909 Third Avenue, NYC</p>
+                                <p class="office-name">Asia Pacific HQ</p>
+                                <p class="office-address">7th floor Green Lanka Tower, Colombo
+                                    Sri Lanka</p>
                             </div>
                         </li>
                         <li>
                             <i class="icon location"></i>
                             <div>
-                                <p class="office-name">Singapore</p>
-                                <p class="office-address">80 Robinson Road</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="icon location"></i>
-                            <div>
-                                <p class="office-name">Dubai</p>
-                                <p class="office-address">Emirates Towers, Level 41</p>
+                                <p class="office-name">Saudi Arabia HQ</p>
+                                <p class="office-address">Riyadh , Saudi Arabia</p>
                             </div>
                         </li>
                     </ul>
@@ -877,8 +934,6 @@
                         <li><a href="#agenda">Agenda</a></li>
                         <li><a href="#about">About Finastra</a></li>
                         <li><a href="#register">Register</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -888,21 +943,15 @@
                     <ul class="contact-info">
                         <li>
                             <i class="icon mail"></i>
-                            <a href="mailto:conference@finastra.com">conference@finastra.com</a>
+                            <a href="mailto:partnerships@cogentsolutions.ae">partnerships@cogentsolutions.ae</a>
                         </li>
                         <li>
                             <i class="icon phone"></i>
-                            <a href="tel:+442012345678">+44 20 1234 5678</a>
+                            <a href="tel:+442012345678">+971 50 5718867</a>
                         </li>
                     </ul>
 
-                    <h3 class="social-heading">Connect With Us</h3>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon twitter-icon"></a>
-                        <a href="#" class="social-icon linkedin-icon"></a>
-                        <a href="#" class="social-icon facebook-icon"></a>
-                        <a href="#" class="social-icon instagram-icon"></a>
-                    </div>
+
                 </div>
             </div>
 
