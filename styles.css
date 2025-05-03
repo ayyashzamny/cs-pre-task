@@ -1055,243 +1055,180 @@ img {
 
 
 /* Agenda Section */
-/* Modern Agenda Styles */
-.modern-agenda {
-    background-color: #f8fafc;
-    padding: 80px 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-}
+.agenda-section {
+    max-width: 900px;
+    margin: 40px auto;
 
-.agenda-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .agenda-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
 }
 
 .agenda-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1e293b;
-    margin-bottom: 12px;
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin: 0 0 8px 0;
 }
 
 .agenda-subtitle {
-    font-size: 1.1rem;
-    color: #64748b;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
+    color: #555;
+    font-size: 1rem;
+    margin: 0;
 }
 
-/* Timeline Styles */
-.timeline {
+.agenda-timeline {
+    border-left: 3px solid #e0e7ef;
+    margin: 32px 0;
+    padding-left: 16px;
+}
+
+.agenda-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
     position: relative;
-    padding-left: 30px;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 2px;
-    background: #e2e8f0;
-    border-radius: 2px;
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.timeline-marker {
-    position: absolute;
-    left: -40px;
-    top: 0;
-    width: 16px;
-    height: 16px;
+.step-marker {
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background: #3b82f6;
-    border: 3px solid white;
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
-    z-index: 1;
+    margin-right: 16px;
+    margin-left: -27px;
+    margin-top: 3px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 3px #2563eb22;
+    flex-shrink: 0;
 }
 
-.timeline-content {
-    padding-left: 20px;
+.marker-keynote {
+    background: #2563eb;
 }
 
-.timeline-time {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #64748b;
-    margin-bottom: 8px;
+.marker-panel {
+    background: #10b981;
 }
 
-.timeline-card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
+.marker-workshop {
+    background: #f59e0b;
 }
 
-.timeline-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+.marker-general {
+    background: #64748b;
 }
 
-.card-header {
-    padding: 20px 25px 10px;
-    border-bottom: 1px solid #f1f5f9;
+.step-content {
+    background: #f6f8fa;
+    border-radius: 8px;
+    padding: 14px 18px;
+    box-shadow: 0 1px 6px #0001;
+    flex: 1;
 }
 
-.event-badge {
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-}
-
-.event-badge.keynote {
-    background-color: rgba(99, 102, 241, 0.1);
-    color: #6366f1;
-}
-
-.event-badge.panel {
-    background-color: rgba(16, 185, 129, 0.1);
-    color: #10b981;
-}
-
-.event-badge.workshop {
-    background-color: rgba(245, 158, 11, 0.1);
-    color: #f59e0b;
-}
-
-.event-badge.general {
-    background-color: rgba(100, 116, 139, 0.1);
-    color: #64748b;
-}
-
-.event-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #1e293b;
-    margin: 8px 0;
-    line-height: 1.4;
-}
-
-.card-body {
-    padding: 10px 25px 20px;
-}
-
-.event-speaker {
-    color: #475569;
+.step-time {
     font-size: 0.95rem;
-    margin: 10px 0;
-    line-height: 1.5;
+    font-weight: bold;
+    color: #555;
 }
 
-.event-location {
-    display: flex;
-    align-items: center;
-    color: #64748b;
-    font-size: 0.9rem;
-    margin-top: 12px;
-}
-
-.location-icon {
-    width: 16px;
-    height: 16px;
-    fill: #94a3b8;
-    margin-right: 8px;
-}
-
-/* Card Color Variations */
-.card-keynote {
-    border-left: 4px solid #6366f1;
-}
-
-.card-panel {
-    border-left: 4px solid #10b981;
-}
-
-.card-workshop {
-    border-left: 4px solid #f59e0b;
-}
-
-.card-general {
-    border-left: 4px solid #64748b;
-}
-
-/* Legend Styles */
-.agenda-legend {
-    margin-top: 60px;
-    text-align: center;
-}
-
-.legend-title {
+.step-title {
     font-size: 1.1rem;
-    font-weight: 600;
-    color: #475569;
-    margin-bottom: 20px;
+    margin: 6px 0;
+    font-weight: bold;
+    color: #222;
 }
 
-.legend-items {
+.step-badge {
+    font-size: 0.72rem;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 15px;
+    color: #fff;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.badge-keynote {
+    background: #2563eb;
+}
+
+.badge-panel {
+    background: #10b981;
+}
+
+.badge-workshop {
+    background: #f59e0b;
+}
+
+.badge-general {
+    background: #64748b;
+}
+
+.step-speaker {
+    color: #2563eb;
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.step-location {
+    color: #64748b;
+    font-size: 0.92rem;
+    margin-top: 6px;
+}
+
+/* Legend */
+.agenda-legend {
     display: flex;
+    gap: 16px;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.legend-item {
-    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
 }
 
 .legend-dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    margin-right: 8px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle;
 }
 
-.legend-dot.keynote {
-    background-color: #6366f1;
+.legend-keynote {
+    background: #2563eb;
 }
 
-.legend-dot.panel {
-    background-color: #10b981;
+.legend-panel {
+    background: #10b981;
 }
 
-.legend-dot.workshop {
-    background-color: #f59e0b;
+.legend-workshop {
+    background: #f59e0b;
 }
 
-.legend-dot.general {
-    background-color: #64748b;
+.legend-general {
+    background: #64748b;
 }
 
-.legend-label {
-    font-size: 0.9rem;
-    color: #475569;
+/* Mobile adjustments */
+@media (max-width: 520px) {
+    .agenda-section {
+        padding: 8px 2px;
+    }
+
+    .step-content {
+        padding: 10px 7px;
+    }
+
+    .agenda-title {
+        font-size: 1.2rem;
+    }
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
