@@ -49,113 +49,58 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    // Agenda tabs functionality
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // Remove active class from all tabs
-            tabBtns.forEach(tab => tab.classList.remove('active'));
-            // Add active class to clicked tab
-            this.classList.add('active');
-            
-            // Hide all day content
-            const dayId = this.getAttribute('data-day');
-            document.querySelectorAll('.day-schedule').forEach(day => {
-                day.classList.add('hidden');
-            });
-            
-            // Show selected day content
-            document.getElementById(dayId + '-content').classList.remove('hidden');
-        });
-    });
     
-    // View more schedule functionality
-    const viewMoreBtns = document.querySelectorAll('.view-more');
-    viewMoreBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const dayId = this.getAttribute('data-day');
-            const dayContent = document.getElementById(dayId + '-content');
-            
-            // Get all schedule items for this day
-            const items = dayContent.querySelectorAll('.schedule-item');
-            
-            // If showing limited items, show all. Otherwise, hide extras
-            if (this.textContent === 'View Full Schedule') {
-                // Create more items if needed (in a real app, these would be loaded from data)
-                if (items.length <= 5) {
-                    const daySchedule = dayContent.querySelector('.day-schedule');
-                    
-                    // Add some sample extra items
-                    for (let i = 0; i < 3; i++) {
-                        const clone = items[0].cloneNode(true);
-                        const titleEl = clone.querySelector('h3');
-                        if (titleEl) {
-                            titleEl.textContent = `Additional Session ${i + 1}`;
-                        }
-                        dayContent.insertBefore(clone, this.parentElement);
-                    }
-                }
-                
-                this.textContent = 'Show Less';
-            } else {
-                // Hide items beyond the first 5
-                this.textContent = 'View Full Schedule';
-                
-                // In a real implementation, we would remove the extra items or hide them
-                // For this demo, we'll just update the button text
-            }
-        });
-    });
+    
+    
     
     // Form submission handling
-    const registrationForm = document.getElementById('registration-form');
-    const registrationSuccess = document.getElementById('registration-success');
-    
-    registrationForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Form validation
-        const firstName = document.getElementById('firstName').value;
-        const lastName = document.getElementById('lastName').value;
-        const email = document.getElementById('email').value;
-        const ticketType = document.getElementById('ticketType').value;
-        
-        if (!firstName || !lastName || !email || !ticketType) {
-            alert('Please fill in all required fields');
-            return;
+    const form = document.getElementById('registration-form');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+  
+      const data = {
+        firstName: document.getElementById('firstName').value.trim(),
+        lastName: document.getElementById('lastName').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        company: document.getElementById('company').value.trim(),
+        comapnyurl: document.getElementById('comapnyurl').value.trim(),
+        marketingConsent: document.getElementById('marketingConsent').checked
+      };
+  
+      try {
+        const response = await fetch('http://localhost:5050/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+  
+        const result = await response.json();
+  
+        if (response.ok && result.success) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Registration Complete!',
+            text: 'Thank you for registering. A confirmation email has been sent.',
+            confirmButtonText: 'Awesome!'
+          }).then(() => {
+            form.reset();
+            document.querySelector('.registration-form-container').style.display = 'none';
+            document.getElementById('registration-success').classList.remove('hidden');
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: result.message || 'Something went wrong. Please try again later.',
+          });
         }
-        
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert('Please enter a valid email address');
-            return;
-        }
-        
-        // Simulate form submission
-        const formContainer = document.querySelector('.registration-container');
-        const registrationFooter = document.querySelector('.registration-footer');
-        
-        // Show loading state
-        registrationForm.querySelector('button[type="submit"]').textContent = 'Processing...';
-        
-        // Simulate API call with timeout
-        setTimeout(() => {
-            // Hide form and show success message
-            formContainer.style.display = 'none';
-            registrationFooter.style.display = 'none';
-            registrationSuccess.classList.remove('hidden');
-            
-            // Scroll to success message
-            registrationSuccess.scrollIntoView({ behavior: 'smooth' });
-        }, 1500);
+      } catch (error) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Server Error',
+          text: 'Unable to connect to the server. Please try again later.',
+        });
+      }
     });
-    
-    // Handle fragment navigation if URL has a hash on page load
-    if (window.location.hash) {
-        const targetId = window.location.hash.substring(1); // Remove the # character
-        setTimeout(() => {
-            scrollToSection(targetId);
-        }, 500);
-    }
 });
