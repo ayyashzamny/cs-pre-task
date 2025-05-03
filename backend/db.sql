@@ -1,6 +1,6 @@
-CREATE DATABASE finastra_event;
+CREATE DATABASE cs-pre-db;
 
-USE finastra_event;
+USE cs-pre-db;
 
 CREATE TABLE registrations (
     id INT AUTO_INCREMENT PRIMARY KEY,
